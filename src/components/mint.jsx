@@ -379,14 +379,14 @@ const Mint = () => {
   return (
     <div className="mint cpy-8">
         <div className="container">
-            <div className="mint_wrapper row">
+            <div className="mint_wrapper row gap-5">
                <div className="mint_wrapper_left col-lg-6 col-md-12 " data-aos="fade-top" data-aos-duration="1000" data-aos-delay="1">
-                    <img src="../assets/img/5mint.svg" alt="" width="600px" height="500px"/>
+                    <img src="../assets/img/5mint.gif" alt=""/>
                </div>
                <div className="mint_wrapper_right col-lg-6 col-md-12 " data-aos="fade-top" data-aos-duration="1000" data-aos-delay="8">
                     <div className="mint_title">
                         <h2>Mint Section</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                        {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p> */}
                     </div>
                     <div className="mint_box ">
                         <div className="mint_price d-flex justify-content-between ">

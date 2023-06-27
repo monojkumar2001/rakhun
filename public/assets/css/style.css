@@ -14,16 +14,13 @@ body {
 }
 
 header.header-mobile{
-    position: fixed;
+    position:absolute;
     width: 100%;
     height: 80px;
     transition: 0.3s;
     z-index: 99999;
-    background: #000000;
-    padding: 40px 0 50px 0;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
-    
-    
+    /* background: #000000; */
+
 }
 
 .logo {
@@ -155,7 +152,7 @@ a.nav-link:hover {
     }
     .logo-mobile{
         position: absolute;
-        top: -22px;
+        top: 20px;
         left: 50%;
         transform: translateX(-50%);
         z-index: -99999999;
@@ -187,7 +184,6 @@ a.nav-link:hover {
     justify-content: center;
     max-width: 1360px;
     margin: auto;
-    margin-top: 40px;
     position: relative;
     
     
@@ -241,7 +237,9 @@ a.nav-link:hover {
     }
 }
 /* ==========================welcome section======================= */
-
+.hero_btn-2{
+    display: none;
+}
 .welcome-content {
     text-align: center;
 }
@@ -520,6 +518,28 @@ li.nav-list .social-ul {
 .overlay {
     --gradient-color: none !important;
 }
+.hero_btn-2 a{
+    display: none;
+    padding: 40px 20px;
+}
+.hero_btn-2 a{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--title-font);
+    width: 250px;
+    margin: auto;
+    align-items: center;
+    transition: .3s;
+    padding: 10px;
+}
 
 @media screen and (max-width:1540px) {
     .hero-content{
@@ -619,6 +639,7 @@ li.nav-list .social-ul {
     .hero_btn{
         display: none;
     }
+
     .unique-wrapper {
         padding: 25px 15px; 
     }
@@ -645,6 +666,12 @@ li.nav-list .social-ul {
         font-size: 40px;
         line-height: 45px;
     }
+    .hero_img{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 215px;
+    }
     
 }
 @media screen and (max-width:540px) {
@@ -660,17 +687,11 @@ li.nav-list .social-ul {
     .hero-title .title3,
     .hero-title .title2,
     .hero-title .title1 {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 27px;
+        line-height: 40px;
     }
    
-    .hero_img{
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* background-clip: content-box; */
-        margin-top: 90px;
-    }
+  
    
 
 }
@@ -1077,7 +1098,18 @@ li.nav-list .social-ul {
         font-size: 40px;
         line-height: 45px;
     }
-    
+    .hero_btn-2{
+        display: block;
+        padding-top: 20px;
+    }
+    .hero_btn-2 a{
+        width: 200px;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .hero_btn-2 .mobile-btnss{
+        width: 30px;
+    }
 }
 @media screen and (max-width:500px) {
     .share_title h2{
@@ -1098,25 +1130,27 @@ li.nav-list .social-ul {
 /* <==========share holder section end==============> */
 
 /* <=============MINT Section start==============> */
-.mint_wrapper {
-    overflow-x: hidden;
+.mint_wrapper_left{
+    width:500px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.mint_wrapper_left:hover{
+transform: scale(1.05) !important;
 }
 .mint_wrapper_left img{
     width: 100%;
-    
-  
 }
 .mint_wrapper_right .mint_title h2{
     font-size: 88px;
     font-family: var(--title-font);
     margin-bottom: 25px;
-    
+    text-align: center;
 }
 .mint_wrapper_right .mint_title p{
     font-size: 24px;
 }
 .mint_box{
-    padding: 40px 0px;
     align-items: center;
   
 }
@@ -1723,12 +1757,13 @@ li.nav-list .social-ul {
         transform: translate(-50%);
     }
    
-    /* .team_box_item {
-        padding:120px 20px 40px 20px;
+    .roadmap_text_list .phase_disc_item p {
+        font-size: 14px;
+        line-height: 20px;
     }
-    .team_box_item {
-        padding: 120px 20px 40px 20px;
-    } */
+    .roadmap_text_list .phase_disc_item_item2 p {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:540px) {
     .team_wrapper .team_title h2{

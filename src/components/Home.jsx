@@ -74,6 +74,9 @@ function Home() {
           <h2 className="title1">10,000 NONCHALANT BANDITS </h2>
           <h2 className=" title2">SHAPING THE COURSE OF GOLF </h2>
           <h2 className="title3">MINTING – TBC</h2>
+          <div className="hero_btn-2">
+                <a  href="https://discord.com/channels/939666076726333460/939666081163935781" target="_blank" rel="noreferrer"><img src="../assets/img/hero/discord.png" alt="" className="mobile-btnss"/>join discord</a>
+            </div>
           </div>
           
             <div>
